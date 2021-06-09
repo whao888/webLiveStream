@@ -47,12 +47,13 @@ export default {
       switch (val) {
         case 1:
           // this.src = 'http://172.16.3.128:8080/live/test110.flv';
-          this.src = "rtmp://172.16.3.128:1935/live/room";
+          this.src = "rtmp://172.16.3.128:1935/live/test110.flv";
           this.type = "rtmp/flv";
           break;
         case 2:
-          this.src = "http://172.16.3.128:8080/hls/test110/playlist.m3u8";
-          this.type = "video/mp4";
+          this.src = "http://172.16.3.128:8080/live/test110.flv";
+          this.type = "video/flv";
+         //this.type = "video/mp4"; //原始
           break;
         case 3:
           this.src = "http://172.16.3.128:8080/hls/test110/playlist.m3u8";
